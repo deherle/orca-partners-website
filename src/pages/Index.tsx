@@ -1,5 +1,6 @@
 import heroPnw from "@/assets/hero-pnw.jpg";
 import orcaIcon from "@/assets/orca-icon.png";
+import darinPhoto from "@/assets/darin-herle.png";
 
 const Header = () => (
   <header className="fixed top-0 left-0 right-0 z-50 bg-primary/95 backdrop-blur-sm">
@@ -116,7 +117,7 @@ const Services = () => (
 
 const About = () => (
   <section id="about" className="py-28 bg-sand">
-    <div className="container mx-auto px-6 max-w-3xl">
+    <div className="container mx-auto px-6 max-w-4xl">
       <p className="text-sm font-semibold tracking-[0.25em] uppercase text-accent mb-3">
         About
       </p>
@@ -124,6 +125,14 @@ const About = () => (
         Darin Herle
       </h2>
       <div className="section-divider mt-8 mb-10" />
+      <div className="flex flex-col md:flex-row gap-10 items-start">
+        <img
+          src={darinPhoto}
+          alt="Darin Herle"
+          width={200}
+          height={200}
+          className="rounded-full w-48 h-48 object-cover flex-shrink-0 mx-auto md:mx-0"
+        />
       <div className="space-y-5 text-muted-foreground leading-relaxed">
         <p>
           Orca Partners is the consultancy of <strong className="text-foreground font-medium">Darin Herle</strong> — a 
@@ -151,6 +160,7 @@ const About = () => (
         Connect on LinkedIn
         <span aria-hidden="true">→</span>
       </a>
+      </div>
     </div>
   </section>
 );
